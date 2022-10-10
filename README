@@ -1,0 +1,25 @@
+EEG Eye State Classification
+
+The classifier takes 14 ElectroEncephalogram measurements as input and predicts whether the eye of the person is open or not.
+Support Vector Machine Classifier in sklearn with kernal = "rbf" and parameters gamma = 1000000 and C=100 was found to give the best results and hence was used.
+
+The Data Set used to train the model contained 10,000 training and 2,000 testing images and was taken from the UCI ML Repository. 
+Link to data set: https://archive.ics.uci.edu/ml/datasets/EEG+Eye+State#
+
+The resultant accuracy score was found to be greater than 97.0%.
+
+The Confusion Matrix is as follows
+
+Confusion matrix:
+
+                     Eye Closed (Predicted)   Eye Open (Predicted)
+Eye Closed (Known)             1070                   19
+Eye Open (Known)                21                    890
+
+(By definition a confusion matrix is such that Cij is equal to the number of observations known to be in group i and predicted to be in group j)
+
+---------------------------------------------------------------------------------------------------------------------
+
+-The source code of the project is the python file "eye_code.py"
+-The Data Set in CSV format is available in the file "eye_data.csv"
+-The Output of the python program is available in the file "output.txt"
